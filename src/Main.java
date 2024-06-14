@@ -31,7 +31,7 @@ public class Main {
         empDatabase.removeEmployee(emp1.getEmployeeId());
 
         //REMAINING EMPLOYEES LEFT IN THE DATABASE AFTER THE REMOVAL//
-        System.out.println("Reaming Employees after amendment");
+        System.out.println("Amendment complete, updated Database below");
         empDatabase.displayAllEmployees();
 
 //        //TASK 1 WORK//
