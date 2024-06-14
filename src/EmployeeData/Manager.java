@@ -2,9 +2,10 @@ package EmployeeData;
 
 public class Manager extends Employee { //Inheritance//
     private String department;
-    public Manager(String employeeId, String name, int age, String jobTitle, int salary, String department) {
+    private int bonus;
+
+    public Manager(String employeeId, String name, int age, String jobTitle, int salary) {
         super(employeeId, name, age, jobTitle, salary);
-        this.department = department;
     }
 
     // Getter for department
@@ -17,14 +18,24 @@ public class Manager extends Employee { //Inheritance//
         this.department = department;
     }
 
+    //Getter for bonus
+    public  int getBonus(){
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
+
     public String toString() {
         return "Manager -" +
-                "department = '" + department + '\'' +
+//                "department = '" + department + '\'' +
                 ", employeeId = ' " + getEmployeeId() + '\'' +
                 ", name = ' " + getName() + '\'' +
                 ", age = " + getAge() +
                 ", jobTitle = ' " + getJobTitle() + '\'' +
                 ", salary = " + getSalary() +
+                ", bouns = " + getBonus() +
                 ' ';
     }
 }

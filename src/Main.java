@@ -1,14 +1,12 @@
-import EmployeeData.EmpDatabase;
-import EmployeeData.Employee;
-import EmployeeData.Manager;
-import EmployeeData.Salesperson;
+import EmployeeData.*;
 
 public class Main {
     public static void main(String[] args) {
         Employee emp1 = new Employee("A123", "Ash Jones", 33, "Power Station Leader", 88000);
-        Manager manager1 = new Manager("B123", "Ruby Heald", 31, "Software Engineer", 30000, "IT");
+        Manager manager1 = new Manager("B123", "Ruby Heald", 31, "Software Engineer", 30000);
         Salesperson salesp1 = new Salesperson("C123", "Clementine Jones", 10, "Sales Person", 500, 150000);
         Salesperson salesp2 = new Salesperson("D123", "Cecelia Jones", 7, "Sales Person", 500, 150000);
+
         //BONUS TASK TO CREATE EMPLOYEE DATABASE//
         EmpDatabase empDatabase = new EmpDatabase();
 
@@ -29,6 +27,10 @@ public class Main {
         //REMOVE EMPLOYEE//
         System.out.println("Removing Employee ID from the Database");
         empDatabase.removeEmployee(emp1.getEmployeeId());
+
+        //ADD BONUS//
+        System.out.println("Bonus added to Employee ID B123");
+        manager1.setBonus(1000);
 
         //REMAINING EMPLOYEES LEFT IN THE DATABASE AFTER THE REMOVAL//
         System.out.println("Amendment complete, updated Database below");

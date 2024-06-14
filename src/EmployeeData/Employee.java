@@ -7,12 +7,13 @@ public class Employee {
     private String jobTitle;
     private int salary;
 
-    public Employee(String employeeId, String name, int age, String jobTitle, int Salary) {
+    public Employee(String employeeId, String name, int age, String jobTitle, int salary) {
         this.employeeId = employeeId;
         this.name = name;
         this.age = age;
         this.jobTitle = jobTitle;
         this.salary = salary;
+
     }
 
     //GETTERS & SETTERS//
