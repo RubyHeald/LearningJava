@@ -5,9 +5,11 @@ import java.util.Map;
 
 public class EmpDatabase {
     private static Map<String, Employee> employeeMap;
-    public EmpDatabase() {
-        this.employeeMap = new HashMap<>();
+    static {
+        employeeMap = new HashMap<>();
     }
+    public EmpDatabase(){
+    };
 
     //ADD EMPLOYEE TO THE DATABASE//
     public static void addEmployee(Employee employee) {
@@ -15,7 +17,7 @@ public class EmpDatabase {
     }
 
         //REMOVE EMPLOYEE FROM THE DATABASE//
-        public void removeEmployee(Employee employeeId){
+        public void removeEmployee(String employeeId){
             employeeMap.remove(employeeId);
         }
 

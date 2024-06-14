@@ -1,5 +1,6 @@
 package EmployeeData;
 
+//Inheritance is used when Salesperson extends Employee//
 public class Salesperson extends Employee {
 
     private int salesTarget;

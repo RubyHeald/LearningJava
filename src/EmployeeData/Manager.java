@@ -1,6 +1,6 @@
 package EmployeeData;
 
-public class Manager extends Employee { //Inheritance
+public class Manager extends Employee { //Inheritance//
     private String department;
     public Manager(String employeeId, String name, int age, String jobTitle, int salary, String department) {
         super(employeeId, name, age, jobTitle, salary);

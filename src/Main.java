@@ -26,9 +26,9 @@ public class Main {
         System.out.println("Retrieving employee ID");
         System.out.println((emp1));
 
-        //REMOVE EMPLOYEE - UNABLE TO COMPLETE"
+        //REMOVE EMPLOYEE//
         System.out.println("Removing Employee ID from the Database");
-        empDatabase.removeEmployee(emp1);
+        empDatabase.removeEmployee(emp1.getEmployeeId());
 
         //REMAINING EMPLOYEES LEFT IN THE DATABASE AFTER THE REMOVAL//
         System.out.println("Reaming Employees after amendment");
